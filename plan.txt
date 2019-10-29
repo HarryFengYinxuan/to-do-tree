@@ -1,0 +1,9 @@
+1. record each state
+2. make undo work
+4. more animation, such as sort
+6. snyc to different platforms. 
+7. dependencies
+8. start button, record time of completion.
+    should allow easy access of finished for the day. like log files
+12. all leaf view
+13. toggle tasks

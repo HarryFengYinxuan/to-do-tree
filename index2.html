@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./node_modules/jquery-ui-dist/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>project manager</title>
+  <!-- <link rel="stylesheet" href="code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <style>
+    
+    .sortable {
+      /* border: 1px solid #eee; */
+      /* width: 142px; */
+      /* display:inline-block; */
+      /* 
+      list-style-type: none;
+      margin: 0;
+      padding: 5px 0 0 0; */
+      /* float: left; */
+      /* margin-right: 10px; */
+      min-height: 8px;
+      /* list-style-type: none; */
+      /* display:inline-block; */
+      /* margin: 10; */
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 20px;
+      /* list-style-position: inside; */
+    }
+    .sortable li {
+      border: 0px;
+      background-color:rgba(0, 0, 0, 0);
+      /* border: 1px solid #eee; */
+      /* margin: 0 5px 5px 5px;
+      padding: 2px;
+      font-size: 1.2em;
+      width: 120px; */
+    } 
+
+    .selectedTask {
+      background-color: rgb(131, 169, 240)
+    }
+
+    h3 {
+      font-size: 14px;
+      margin-bottom: 0px;
+    }
+
+    /* ::selection {
+      background: rgb(19, 138, 48);
+    } */
+
+    .btn {
+      font-size: 14px;
+    }
+
+    .form-control-sm {
+      padding: 0px;
+      width: 373px;
+      margin-bottom: 5px;
+    }
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+  <div class='trial alert' style="height:380px; overflow-y: scroll">
+  </div>
+  <div class='alert'>
+    <div class='editTask'>
+
+      <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="input-group input-group-sm">
+          <input type="text" class="editTaskName form-control" placeholder="What's your task?" aria-label="Input group example" aria-describedby="btnGroupAddon">
+          <div class="input-group-append" style="z-index:1">
+            <button type="button" class="addButton btn">Add</button>
+            <button type="button" class="editButton btn">Edit</button>
+            <button type="button" class="removeButton btn">Remove</button>
+            <button type="button" class="finishButton btn">Finish</button>
+            <!-- <button type="button" class="btn btn-secondary">4</button> -->
+          </div>
+        </div>
+      </div>
+
+      <input type="text" id="datepicker" class="form-control form-control-sm">
+      <input type="time" id="time" class="form-control form-control-sm">
+    </div>
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="bordersButton btn btn-outline-secondary">
+            <input type="checkbox" autocomplete="off"> Borders
+          </label>
+        <label class="autoSortButton btn btn-outline-secondary">
+            <input type="checkbox" autocomplete="off"> Auto-Sort
+          </label>
+    </div>
+    <button type="button" class="completionButton btn">Completion</button>
+    <button type="button" class="sortButton btn">Sort</button>
+    <button type="button" class="cleanUpButton btn">Clean Up</button>
+  </div>
+
+
+
+ 
+ 
+</body>
+<script>
+
+    window.nodeRequire('./makeDragable.js');
+</script>
+</html>
