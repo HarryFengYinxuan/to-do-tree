@@ -19,6 +19,7 @@ let autoSort = true;
 
 // global functions
 function recover(data=null){
+    finishedTask = []; // starting over
     let lastContent;
     fs.realpath('', (err, data) => {
         if (DEBUG) console.log(data);
@@ -785,6 +786,7 @@ removeTaskButton.click(function () {
 })
 
 finishTaskButton.click(function() {
+    const DEBUG = true;
     var taskSelected = listAll[selected]
     var childrenSelected = taskSelected.find('li')
     var taskContent = taskSelected.find('h3')

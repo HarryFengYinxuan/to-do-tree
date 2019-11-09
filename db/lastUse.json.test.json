@@ -1,0 +1,14 @@
+[
+    0,
+    {"name": "Projects", "id":0, "parentId":null, "childrenIdList": [1,2,3], "deadline":null, "finished": false},
+    {"name": "School", "id":1, "parentId":0, "childrenIdList": [4,5], "deadline":null, "finished": false},
+    {"name": "Research", "id":2, "parentId":0, "childrenIdList": [6,7,8], "deadline":null, "finished": false},
+    {"name": "Career", "id":3, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    {"name": "Computational Theory", "id":4, "parentId":1, "childrenIdList": [], "deadline":null, "finished": false},
+    {"name": "Career", "id":5, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    {"name": "Career", "id":6, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    {"name": "Career", "id":7, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    {"name": "Career", "id":8, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    {"name": "Career", "id":9, "parentId":0, "childrenIdList": [9], "deadline":null, "finished": false},
+    
+]

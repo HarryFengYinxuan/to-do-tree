@@ -1,9 +1,12 @@
 1. record each state
 2. make undo work
+3. auto sort after changing time, this should be easy as everything else should be already sorted
 4. more animation, such as sort
 6. snyc to different platforms. 
 7. dependencies
 8. start button, record time of completion.
     should allow easy access of finished for the day. like log files
+10. sometimes a new task has no border
+11. check cross day clean up
 12. all leaf view
 13. toggle tasks
